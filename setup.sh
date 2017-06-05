@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # setup.sh author Mascerano Bachir (dev-labs.co)
-# Install all dependencies nedded for avoidz.rb tool
+# Install all dependencies nedded for astroid
 # --------------------------------------------------------
 
 #Colors
