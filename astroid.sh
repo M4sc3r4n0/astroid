@@ -2,7 +2,7 @@
 #
 # Astroid A.V bypass tool . version 1.0
 #
-# Generate encoded shellcode with metasploit payloads,convert python file to exe
+# Generate encoded shellcode with metasploit payloads,decoded by avet then compiled to EXE's
 #
 #                  Created By Mascerano Bachir .
 #                 Website: http://www.dev-labs.co
