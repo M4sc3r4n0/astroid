@@ -39,7 +39,7 @@
 	     ./astroid.sh   
 
 ## video tutorial: 
-ASTOID v 1.0 : 
+ASTOID v 1.0 : https://www.youtube.com/watch?v=3He_Q07EKPI
 
 ### Credits to: 
 **Govolution https://github.com/govolution/avet
