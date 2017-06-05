@@ -33,10 +33,11 @@
 		 
     3?- Run setup script
          ./setup.sh == to check dependencies
+	  manual installation MinGW EXE == http://dev-labs.co/mingw-exe/
 
     4?- Run astroid tool == example
        ./astroid.sh 
-       manual installation MinGW EXE == http://dev-labs.co/mingw-exe/
+      
 
 ## video tutorial: 
 ASTOID v 1.0 : https://www.youtube.com/watch?v=3He_Q07EKPI
