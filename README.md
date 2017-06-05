@@ -29,14 +29,14 @@
     2? - Set setup script execution permission
          cd astroid
          chmod +x setup.sh
-		 ./setup.sh
-		 manual installation MinGW EXE == http://dev-labs.co/mingw-exe/
-
+	
+		 
     3?- Run setup script
          ./setup.sh == to check dependencies
 
     4?- Run astroid tool == example
-	     ./astroid.sh   
+       ./astroid.sh 
+       manual installation MinGW EXE == http://dev-labs.co/mingw-exe/
 
 ## video tutorial: 
 ASTOID v 1.0 : https://www.youtube.com/watch?v=3He_Q07EKPI
