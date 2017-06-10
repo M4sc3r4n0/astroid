@@ -127,7 +127,7 @@ if test "$(ls -A "$directory")"; then
 	rm $directory/make_avet
 	rm $directory/sh_format
 fi
-rm mingw-get-setup.exe
+rm mingw-get-setup.exe > /dev/null 2>&1
 gcc make_avet.c -o make_avet
 gcc sh_format.c -o sh_format
 sleep 2
