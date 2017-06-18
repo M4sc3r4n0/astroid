@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # setup.sh author Mascerano Bachir (dev-labs.co)
-# Install all dependencies nedded for astroid
+# Install all dependencies nedded for avoidz.rb tool
 # --------------------------------------------------------
 
 #Colors
@@ -25,13 +25,16 @@ echo " \__  \  /  ___/\   __\_  __ \/  _ \|  |/ __ |  "
 echo "  / __ \_\___ \  |  |  |  | \(  <_> )  / /_/ |  "
 echo " (____  /____  > |__|  |__|   \____/|__\____ |  "
 echo "      \/     \/                             \/  "
-echo "        Setup Script for ASTROID 1.0            "
+echo "        Setup Script for ASTROID 1.2            "
 echo "     Created by Mascerano Bachir/Dev-labs       "
 #updating your distro
-echo -e $green ""
-echo "[ ✔ ] system found."
+echo  
+echo -e $green "[ ✔ ] system found."
+echo -e $blue
 sudo cat /etc/issue.net
-echo "[ ✔ ] updating distro."
+echo
+echo -e $green "[ ✔ ] updating distro."
+echo -e $green
 sudo apt-get update -y
 #check dependencies existence
 echo -e $blue ""
@@ -49,7 +52,7 @@ else
 echo -e $red "[ X ] Metasploit-Framework  -> not found "
 echo -e $yellow "[ ! ] Installing Metasploit-Framework "
 sudo apt-get install metasploit-framework -y
-echo -e $green "[ ✔ ] Done installing ...."
+echo -e $blue "[ ✔ ] Done installing ...."
 which msfconsole > /dev/null 2>&1
 sleep 2
 fi
@@ -68,7 +71,7 @@ sleep 2
 echo -e $green ""
 sudo apt-get install xterm -y
 clear
-echo -e $green "[ ✔ ] Done installing .... "
+echo -e $blue "[ ✔ ] Done installing .... "
 which xterm > /dev/null 2>&1
 fi
 # check if wine exists
@@ -82,7 +85,7 @@ echo -e $red "[ X ] Wine  -> not found "
 echo -e $yellow "[ ! ]  Installing wine "
 echo -e $green ""
 sudo dpkg --add-architecture i386 && apt-get update && apt-get install wine:i386 -y
-echo -e $green "[ ✔ ] Done installing ...."
+echo -e $blue "[ ✔ ] Done installing ...."
 which wine > /dev/null 2>&1
 sleep 2
 fi
@@ -103,20 +106,21 @@ echo "#!/bin/sh" >> /usr/bin/mingw-gcc
 echo "cd /root/.wine/drive_c/MinGW/bin" >> /usr/bin/mingw-gcc
 echo "exec wine gcc.exe \"\$@\"" >> /usr/bin/mingw-gcc
 chmod +x /usr/bin/mingw-gcc
-echo -e $green "[ ✔ ] Done installing ...."
+echo -e $blue "[ ✔ ] Done installing ...."
 which mingw-gcc > /dev/null 2>&1
 sleep 2
 fi
 # clone from govolution repo
 echo -e $green "[ ! ] Cloning avet repo................[ proceed ]"
 git clone https://github.com/govolution/avet.git
-echo -e $green "[ ✔ ] Done cloned ...."
+echo -e $blue "[ ✔ ] Done cloned ...."
 sleep 2
 mv avet/* $path
+echo
 directory="$path"
 if test "$(ls -A "$directory")"; then
 
-	echo "[ ! ] rebuild files "
+	echo -e $yellow "[ ! ] rebuild files "
 	rm -r $directory/avet
 	rm -r $directory/build
 	rm $directory/README.md
@@ -127,6 +131,7 @@ if test "$(ls -A "$directory")"; then
 	rm $directory/make_avet
 	rm $directory/sh_format
 fi
+sleep 2
 rm mingw-get-setup.exe > /dev/null 2>&1
 gcc make_avet.c -o make_avet
 gcc sh_format.c -o sh_format
@@ -136,7 +141,9 @@ echo -e $yellow "[ ! ] geving permission to astroid script"
 chmod +x astroid.sh
 sleep 2
 echo
+echo -e $green "--------------------------------------"
 echo -e $blue "To execute astroid write (./astroid.sh)"
+sleep 2
 echo -e $green ""
 echo "------------------------------------" 
 echo "| [ ✔ ]installation completed[ ✔ ] |" 
