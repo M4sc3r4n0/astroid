@@ -1,4 +1,4 @@
-## ASTROID v 1.0 
+## ASTROID v 1.2 
     Author: Mascerano Bachir [ dev-labs ]
 
 ## Legal Disclamer:
@@ -9,9 +9,9 @@
     This tool Generate Shellcodes with metasploit,Decoded By Avet & compiled to EXE's 
  
 ## Screenshot:
-![pic1](http://i.imgur.com/9eyz65c.jpg)
+![pic1](http://i.imgur.com/blp3O8X.jpg)
 
-![pic2](http://i.imgur.com/dVDHqlb.jpg)
+![pic2](http://i.imgur.com/XllFJeM.jpg)
 
 <br /><br />
 
@@ -40,7 +40,10 @@
       
 
 ## video tutorial: 
-ASTOID v 1.0 : https://www.youtube.com/watch?v=3He_Q07EKPI
+ASTOID old version 1.0 : https://www.youtube.com/watch?v=3He_Q07EKPI
+
+## result:
+FUD : https://virusscan.jotti.org/en-US/filescanjob/uaj7ga5guq
 
 ### Credits to: 
 **Govolution https://github.com/govolution/avet
